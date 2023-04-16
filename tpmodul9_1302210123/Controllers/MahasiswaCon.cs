@@ -34,12 +34,6 @@ namespace tpmodul9_1302210123.Controllers
             mh.Add(newMahasiswa);
         }
 
-        [HttpPut("{idx}")]
-        public void Put(int idx, [FromBody] Mahasiswa updatedMahasiswa)
-        {
-            mh[idx] = updatedMahasiswa;
-        }
-
         [HttpDelete("{idx}")]
         public void Delete(int idx)
         {
